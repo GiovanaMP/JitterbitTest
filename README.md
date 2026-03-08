@@ -1,7 +1,6 @@
 # Teste Técnico Jitterbit - Perguntas e Respostas
 
-## 1) O que o teste pede?
-**Pergunta do teste:** Desenvolver uma API em Node.js para gerenciar pedidos (criar, ler, atualizar e excluir).
+## 1) ** Desenvolver uma API em Node.js para gerenciar pedidos (criar, ler, atualizar e excluir).
 
 **Resposta implementada:**
 - API em `Node.js` com `Fastify`.
@@ -14,8 +13,7 @@
 
 ---
 
-## 2) O teste pede banco de dados. Qual foi usado?
-**Pergunta do teste:** Armazenar os dados em MongoDB, SQL ou PostgreSQL.
+## 2) ** Armazenar os dados em MongoDB, SQL ou PostgreSQL.
 
 **Resposta implementada:**
 - `PostgreSQL` + `Prisma`.
@@ -26,8 +24,7 @@
 
 ---
 
-## 3) O teste pede transformação (mapping). Como foi feito?
-**Pergunta do teste:** Receber JSON de entrada e transformar para salvar no banco.
+## 3)** Receber JSON de entrada e transformar para salvar no banco.
 
 **Resposta implementada:**
 Entrada:

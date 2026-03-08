@@ -58,7 +58,7 @@ Regra aplicada:
 - `@fastify/swagger` + `@fastify/swagger-ui`
 - `Postman`
 - `Jest` + `Supertest`
-- `Docker Compose` (subida do banco)
+- `Docker Compose` 
 
 ## Arquitetura
 - `src/config`

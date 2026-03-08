@@ -81,7 +81,6 @@ Status usados:
 
 Observação importante no Swagger:
 - Em `Authorize`, copie e cole apenas o valor do token JWT.
-- Não cole o JSON inteiro retornado pelo login.
 
 ---
 
@@ -128,19 +127,8 @@ pnpm run dev
 
 ---
 
-## 8) Como autenticar no Swagger sem erro?
-1. Execute `POST /auth/login`.
-2. Copie o valor de `token` da resposta.
-3. Clique em `Authorize`.
-4. Cole **somente a string do token**.
 
-Importante:
-- Não colar o JSON inteiro (`{"token":"..."}`).
-- Cole apenas o valor JWT (`eyJ...`).
-
----
-
-## 9) Como validar rapidamente os endpoints?
+## 8) Como validar rapidamente os endpoints?
 1. `POST /auth/login`
 2. `POST /order`
 3. `GET /order/list`
@@ -151,7 +139,7 @@ Importante:
 
 ---
 
-## 10) Testes automatizados foram feitos?
+## 9) Testes automatizados foram feitos?
 Sim.
 
 Rodar:

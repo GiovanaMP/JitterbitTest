@@ -1,0 +1,95 @@
+{
+	"info": {
+		"name": "Jitterbit Order API",
+		"description": "Coleção para validar os endpoints do desafio Jitterbit.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth - Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"{{username}}\",\n  \"password\": \"{{password}}\"\n}"
+				},
+				"url": "{{baseUrl}}/auth/login"
+			}
+		},
+		{
+			"name": "Order - Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"numeroPedido\": \"v10089015vdb-01\",\n  \"valorTotal\": 10000,\n  \"dataCriacao\": \"2023-07-19T12:24:11.5299601+00:00\",\n  \"items\": [\n    {\n      \"idItem\": \"2434\",\n      \"quantidadeItem\": 1,\n      \"valorItem\": 1000\n    }\n  ]\n}"
+				},
+				"url": "{{baseUrl}}/order"
+			}
+		},
+		{
+			"name": "Order - Get By Id",
+			"request": {
+				"method": "GET",
+				"url": "{{baseUrl}}/order/{{orderId}}"
+			}
+		},
+		{
+			"name": "Order - List",
+			"request": {
+				"method": "GET",
+				"url": "{{baseUrl}}/order/list"
+			}
+		},
+		{
+			"name": "Order - Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"numeroPedido\": \"{{orderId}}-01\",\n  \"valorTotal\": 12000,\n  \"dataCriacao\": \"2023-07-19T12:24:11.5299601+00:00\",\n  \"items\": [\n    {\n      \"idItem\": \"2434\",\n      \"quantidadeItem\": 2,\n      \"valorItem\": 6000\n    }\n  ]\n}"
+				},
+				"url": "{{baseUrl}}/order/{{orderId}}"
+			}
+		},
+		{
+			"name": "Order - Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"url": "{{baseUrl}}/order/{{orderId}}"
+			}
+		}
+	]
+}

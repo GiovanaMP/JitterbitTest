@@ -1,4 +1,4 @@
-# Teste Técnico Jitterbit - Perguntas e Respostas
+# Teste Técnico Jitterbit 
 
 ## 1)Desenvolver uma API em Node.js para gerenciar pedidos (criar, ler, atualizar e excluir).
 

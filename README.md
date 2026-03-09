@@ -1,6 +1,6 @@
 # Teste Técnico Jitterbit - Perguntas e Respostas
 
-## 1) ** Desenvolver uma API em Node.js para gerenciar pedidos (criar, ler, atualizar e excluir).
+## 1)Desenvolver uma API em Node.js para gerenciar pedidos (criar, ler, atualizar e excluir).
 
 **Resposta implementada:**
 - API em `Node.js` com `Fastify`.
@@ -13,7 +13,7 @@
 
 ---
 
-## 2) ** Armazenar os dados em MongoDB, SQL ou PostgreSQL.
+## 2)Armazenar os dados em MongoDB, SQL ou PostgreSQL.
 
 **Resposta implementada:**
 - `PostgreSQL` + `Prisma`.
@@ -24,7 +24,7 @@
 
 ---
 
-## 3)** Receber JSON de entrada e transformar para salvar no banco.
+## 3)Receber JSON de entrada e transformar para salvar no banco.
 
 **Resposta implementada:**
 Entrada:
@@ -49,8 +49,7 @@ Regra aplicada:
 
 ---
 
-## 4) O teste pede tratamento de erros e status HTTP corretos. Foi implementado?
-**Resposta implementada:** Sim.
+## 4)Tratamento de erros e status HTTP corretos. 
 
 Status usados:
 - `201` criação
@@ -64,10 +63,7 @@ Status usados:
 
 ---
 
-## 5) Recursos opcionais do teste foram feitos?
-**Pergunta do teste:** JWT e documentação (Swagger/Postman) são opcionais.
-
-**Resposta implementada:** Sim, ambos.
+## 5) JWT e documentação (Swagger/Postman) 
 
 - JWT:
   - `POST /auth/login`
@@ -81,7 +77,7 @@ Observação importante no Swagger:
 
 ---
 
-## 6) Qual stack foi adotada?
+## 6)Stack adotada
 - Node.js
 - Fastify
 - PostgreSQL
@@ -97,7 +93,7 @@ Observação importante no Swagger:
 
 ---
 
-## 7) Como rodar o projeto?
+## 7) Como rodar o projeto:
 ### Com Docker (forma usada no desenvolvimento)
 ```bash
 pnpm install
@@ -125,7 +121,7 @@ pnpm run dev
 ---
 
 
-## 8) Como validar rapidamente os endpoints?
+## 8) Como validar rapidamente os endpoints:
 1. `POST /auth/login`
 2. `POST /order`
 3. `GET /order/list`
@@ -136,12 +132,9 @@ pnpm run dev
 
 ---
 
-## 9) Testes automatizados foram feitos?
-Sim.
-
+## 9) Testes automatizados:
 Rodar:
 ```bash
 pnpm run test
 ```
-
 Inclui testes de integração com `Jest + Supertest`.

@@ -97,10 +97,15 @@ Observação importante no Swagger:
 ### Com Docker (forma usada no desenvolvimento)
 ```bash
 pnpm install
+cp .env.example .env
 pnpm run db:start
 pnpm run db:push
 pnpm run dev
 ```
+
+Observação:
+- `pnpm run db:start` é o comando recomendado no projeto.
+- Equivalente direto no Docker: `docker compose up -d`
 
 API:
 - `http://localhost:3000`
@@ -110,8 +115,12 @@ Swagger:
 
 ### Sem Docker
 1. Configurar PostgreSQL local.
-2. Ajustar `DATABASE_URL` no `.env`.
-3. Rodar:
+2. Criar `.env` a partir do exemplo:
+```bash
+cp .env.example .env
+```
+3. Ajustar `DATABASE_URL` no `.env`.
+4. Rodar:
 ```bash
 pnpm install
 pnpm run db:push
